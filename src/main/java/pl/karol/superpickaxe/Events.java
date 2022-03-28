@@ -16,12 +16,13 @@ public class Events implements Listener {
     @EventHandler
     public void onBreakBlock(BlockBreakEvent event) {
         Player player = (Player) event;
-        List<Enchantment> possible = new ArrayList<Enchantment>();
+        List<Enchantment> possible = new ArrayList<>();
         ItemStack item = player.getItemInUse();
 
         for(Enchantment ench : Enchantment.values()) {
             if(ench.canEnchantItem(item)) {
                 possible.add(ench);
+                item.getItemMeta();
             }
         }
 
