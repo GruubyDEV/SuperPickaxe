@@ -1,0 +1,4 @@
+name: SuperPickaxe
+version: '1.0-SNAPSHOT'
+main: pl.karol.superpickaxe.SuperPickaxe
+api-version: 1.18
